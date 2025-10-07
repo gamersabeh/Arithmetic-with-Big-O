@@ -105,5 +105,27 @@ def main():
             else:
                 print("The list is empty. Please add some numbers first.")
         # Time Complexity: O(n)
+
+        elif choice == "3":  # Linear Search
+            search_list = []
+            while True:
+                n = input("Enter a number (or type 'done' to finish): ").strip()
+                if n.lower() == "done":
+                    break
+                
+                elif n.isdigit():
+                    search_list.append(int(n))
+                else:
+                    print("Invalid input. Please enter a valid number or 'done'.")
+            if search_list:
+                target = int(input("Enter the number to search for: "))
+                found = linear_search(search_list, target)
+                if found:
+                    print("found")
+                else:
+                    print("not found")
+            else:
+                print("The list is empty. Please add some numbers first.")
+        # Time Complexity: O(n)
         
        
