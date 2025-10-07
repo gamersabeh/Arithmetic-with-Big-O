@@ -81,4 +81,9 @@ def main():
             break
         # Time Complexity: O(1)
         
+        elif not logged_in:
+            print(" You must log in first!")
+        # Time Complexity: O(1)
+        
+
        
