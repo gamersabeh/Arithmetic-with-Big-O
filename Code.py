@@ -84,6 +84,10 @@ def main():
         elif not logged_in:
             print(" You must log in first!")
         # Time Complexity: O(1)
-        
 
+        elif choice == "1":  # Factorial
+            n = int(input("Enter a number: "))
+            print(f"Factorial of ", n, "is", factorial(n))
+        # Time Complexity: O(n)
+        
        
