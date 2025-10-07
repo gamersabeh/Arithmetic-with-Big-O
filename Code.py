@@ -133,5 +133,9 @@ def main():
             print("Iterative Fibonacci of ", n, "is", fibonacci(n))
             print("Recursive Fibonacci of ", n, "is", fibonacci_recursive(n))
         # Time Complexity: O(n) + O(2^n) => O(2^n)
+        else:
+            print("Invalid choice, try again.")
+        # Time Complexity: O(1)
         
+main()
        
