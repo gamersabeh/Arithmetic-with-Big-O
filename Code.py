@@ -127,5 +127,11 @@ def main():
             else:
                 print("The list is empty. Please add some numbers first.")
         # Time Complexity: O(n)
+
+        elif choice == "4":  # Fibonacci
+            n = int(input("Enter n: "))
+            print("Iterative Fibonacci of ", n, "is", fibonacci(n))
+            print("Recursive Fibonacci of ", n, "is", fibonacci_recursive(n))
+        # Time Complexity: O(n) + O(2^n) => O(2^n)
         
        
