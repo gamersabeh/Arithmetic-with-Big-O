@@ -75,4 +75,10 @@ def main():
             else:
                 print(" Login failed! Incorrect username or password.")
         # Time Complexity: O(1)
+
+        elif choice == "6":  # Exit
+            print(" Program ended")
+            break
+        # Time Complexity: O(1)
+        
        
