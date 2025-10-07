@@ -50,3 +50,29 @@ def fibonacci_recursive(n):
         return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2)
 # Time Complexity: O(2^n)
 
+def main():
+    logged_in = False
+    username = "admin"
+    password = "1234"
+
+    while True:
+        print("\nPlease login and choose an option:")
+        print("1. Factorial of a number")
+        print("2. Find the maximum number in a list")
+        print("3. Linear search for a target in a list")
+        print("4. Fibonacci of a number")
+        print("5. Login")
+        print("6. Exit")
+
+        choice = input("Enter your choice (1-6): ")
+
+        if choice == "5":  # Login
+            user = input("Enter username: ")
+            pwd = input("Enter password: ")
+            if user == username and pwd == password:
+                logged_in = True
+                print(" Login successful!")
+            else:
+                print(" Login failed! Incorrect username or password.")
+        # Time Complexity: O(1)
+       
