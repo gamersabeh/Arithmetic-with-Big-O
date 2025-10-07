@@ -90,4 +90,20 @@ def main():
             print(f"Factorial of ", n, "is", factorial(n))
         # Time Complexity: O(n)
         
+        elif choice == "2":  # Find Max
+            max_list = []
+            while True:
+                n = input("Enter a number (or type 'done' to finish): ").strip()
+                if n.lower() == "done":
+                    break
+                elif n.isdigit():
+                    max_list.append(int(n))
+                else:
+                    print("Invalid input. Please enter a valid number or 'done'.")
+            if max_list:
+                print("The maximum number in the list is:", find_Max(max_list))
+            else:
+                print("The list is empty. Please add some numbers first.")
+        # Time Complexity: O(n)
+        
        
