@@ -38,3 +38,15 @@ def fibonacci(n):
         return b
 # Time Complexity: O(n)
 
+# Recursive Fibonacci
+def fibonacci_recursive(n):
+    if n <= 0:
+        return "incorrect input"
+    elif n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2)
+# Time Complexity: O(2^n)
+
