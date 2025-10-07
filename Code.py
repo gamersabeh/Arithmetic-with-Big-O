@@ -5,3 +5,12 @@ def factorial(n):
         result *= i
     return result
 # Time Complexity: O(n)
+
+# Find Max
+def find_Max(nbs):
+    max_val = nbs[0]
+    for i in nbs:
+        if i > max_val:
+            max_val = i
+    return max_val
+# Time Complexity: O(n)
